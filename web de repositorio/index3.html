@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPOSITORIO - Galería de Motocicletas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .image-table {
+            width: 100%;
+            background-color: #f8f9fa; /* Fondo claro para la tabla */
+            padding: 10px;
+        }
+        .image-cell {
+            padding: 10px;
+            text-align: center;
+            background-color: #ffffff; /* Fondo blanco para cada celda */
+            transition: transform 0.3s ease-in-out; /* Animación de agrandamiento */
+        }
+        .image-cell img {
+            width: 100%;
+            max-width: 200px; /* Ajusta el ancho máximo de las imágenes */
+            height: 200px; /* Altura fija para todas las imágenes */
+            object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+            transition: transform 0.3s ease-in-out; /* Animación de agrandamiento */
+        }
+        .image-cell:hover img {
+            transform: scale(1.2); /* Agranda la imagen al 120% cuando se hace hover */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-danger text-white text-center py-2 d-flex align-items-center justify-content-center">
+        <h1 class="mb-0">VENTA DE MOTOS IMPORT VRL</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../web%20de%20repositorio/index2.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../web%20de%20repositorio/index4.html">Envios Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../web%20de%20repositorio/index3.html">Motocicletas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <h2>Gama de Motocicletas que disponemos</h2>
+        <table class="table image-table">
+            <tbody>
+                <tr>
+                    <td class="image-cell"><img src="imagenes/moto.jpg" alt="Motocicleta 1"></td>
+                    <td class="image-cell"><img src="imagenes/moto2.jpg" alt="Motocicleta 2"></td>
+                    <td class="image-cell"><img src="imagenes/moto3.jpg" alt="Motocicleta 3"></td>
+                    <td class="image-cell"><img src="imagenes/moto4.jpg" alt="Motocicleta 4"></td>
+                </tr>
+                <tr>
+                    <td class="image-cell"><img src="imagenes/moto5.jpg" alt="Motocicleta 5"></td>
+                    <td class="image-cell"><img src="imagenes/moto6.jpg" alt="Motocicleta 6"></td>
+                    <td class="image-cell"><img src="imagenes/moto7.jpg" alt="Motocicleta 7"></td>
+                    <td class="image-cell"><img src="imagenes/moto8.jpg" alt="Motocicleta 8"></td>
+                </tr>
+                <tr>
+                    <td class="image-cell"><img src="imagenes/moto9.jpg" alt="Motocicleta 9"></td>
+                    <td class="image-cell"><img src="imagenes/moto10.jpg" alt="Motocicleta 10"></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="bg-danger text-white text-center py-2">
+        <p>COPYRIGHT</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

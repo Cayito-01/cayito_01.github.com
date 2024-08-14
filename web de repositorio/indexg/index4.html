@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPOSITORIO - Galería de Imágenes y Videos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .media-table {
+            width: 100%;
+            background-color: #f8f9fa; /* Fondo claro para la tabla */
+            padding: 10px;
+        }
+        .media-cell {
+            padding: 10px;
+            text-align: center;
+            background-color: #ffffff; /* Fondo blanco para cada celda */
+            transition: transform 0.3s ease-in-out; /* Animación de agrandamiento */
+        }
+        .media-cell img {
+            width: 100%;
+            max-width: 300px; /* Ajusta el ancho máximo de las imágenes */
+            height: 300px; /* Altura fija para todas las imágenes */
+            object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+            transition: transform 0.3s ease-in-out; /* Animación de agrandamiento */
+        }
+        .media-cell video {
+            width: 100%;
+            max-width: 300px; /* Ajusta el ancho máximo de los videos */
+            height: 300px; /* Altura fija para todos los videos */
+            object-fit: cover; /* Asegura que el video cubra el área sin distorsionarse */
+            transition: transform 0.3s ease-in-out; /* Animación de agrandamiento */
+        }
+        .media-cell:hover img,
+        .media-cell:hover video {
+            transform: scale(1.2); /* Agranda la imagen o video al 120% cuando se hace hover */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-danger text-white text-center py-2 d-flex align-items-center justify-content-center">
+        <h1 class="mb-0">VENTA DE MOTOS IMPORT VRL</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Envios Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Motocicletas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <h2>Galería de Imágenes y Videos</h2>
+        <table class="table media-table">
+            <tbody>
+                <tr>
+                    <td class="media-cell"><img src="imagenes/cliente.jpg" alt="Motocicleta 1"></td>
+                    <td class="media-cell"><img src="imagenes/cliente2.jpg" alt="Motocicleta 2"></td>
+                </tr>
+                <tr>
+                    <td class="media-cell"><video controls>
+                        <source src="videos/video1 (1).mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video></td>
+                    <td class="media-cell"><video controls>
+                        <source src="videos/video1 (2).mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video></td>
+                </tr>
+                <tr>
+                    <td class="media-cell"><video controls>
+                        <source src="videos/video1 (3).mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video></td>
+                    <td class="media-cell"></td> <!-- Celda vacía para mantener la estructura -->
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="bg-danger text-white text-center py-2">
+        <p>COPYRIGHT</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
